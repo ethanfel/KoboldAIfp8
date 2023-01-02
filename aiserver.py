@@ -2561,6 +2561,7 @@ def patch_transformers():
 
 def reset_model_settings():
     koboldai_vars.reset_for_model_load()
+    vars.lazy_load = False
     
     
 def unload_model():
