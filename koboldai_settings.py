@@ -711,7 +711,7 @@ class model_settings(settings):
         self.modeldim    = -1     # Embedding dimension of your model (e.g. it's 4096 for GPT-J-6B and 2560 for GPT-Neo-2.7B)
         self.sampler_order = [6, 0, 1, 2, 3, 4, 5]
         self.newlinemode = "n"
-        self.lazy_load   = True # Whether or not to use torch_lazy_loader.py for transformers models in order to reduce CPU memory usage
+        self.lazy_load   = False # Whether or not to use torch_lazy_loader.py for transformers models in order to reduce CPU memory usage
         self.revision    = None
         self.presets     = []   # Holder for presets
         self.selected_preset = ""
